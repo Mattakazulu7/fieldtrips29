@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #4caf50;
+    --hover-color: #388e3c;
+    --background-color: #f0f8ff;
+    --text-color-dark: #333;
+    --text-color-light: #555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Stacks views vertically */
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 240px); /* Adjust for header/footer */
+    padding: 20px; /* Add some padding */
+}
+
+.view {
+    position: relative;
+    top: -100px;
+    display: none; /* Default to hidden */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Max width for larger screens */
+    margin: 20px 0; /* Space between views */
+    padding: 20px; /* Padding inside the view */
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for view appearance */
+}
+
+.view.active {
+    display: block; /* Show active view */
+    opacity: 1; /* Ensure it is fully opaque */
+    transform: translateY(0); /* Reset translation */
+}
+
+.view.hidden {
+    display: block; /* Keep block to allow for transition effects */
+    opacity: 0; /* Start hidden */
+    transform: translateY(10px); /* Slightly move down */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.container:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+}
+
+.greeting {
+    font-size: 3em;
+    color: var(--text-color-dark);
+}
+
+.message {
+    font-size: 1.5em;
+    color: var(--text-color-light);
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+a:hover {
+    background-color: var(--hover-color);
+}
+
+a:focus {
+    outline: 2px dashed var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Centering <h2> elements within views */
+.view h2 {
+    text-align: center; /* Center aligns the text */
+    color: var(--text-color-dark); /* Ensure it uses the defined dark text color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.product-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between tiles */
+}
+
+.product-tile {
+    background-color: #fff; /* White background for tiles */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 15px; /* Padding inside tiles */
+    text-align: center; /* Center text */
+    transition: transform 0.2s ease; /* Scale effect on hover */
+}
+
+.product-tile:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.delete-button {
+    background-color: #f44336; /* Red color for delete button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .greeting {
+        font-size: 2.5em;
+    }
+
+    .message {
+        font-size: 1.2em;
+    }
+
+    a {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .view {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+     .product-tile {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}

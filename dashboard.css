@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 45%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: inline-block;
+    vertical-align: top;
+}
+.payment-container {
+    width: 30%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.date-info {
+    text-align: right;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #218838;
+}
+.log {
+    margin-top: 20px;
+}
+.log-entry {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.log-entry:last-child {
+    border-bottom: none;
+}

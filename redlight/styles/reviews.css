@@ -1,0 +1,56 @@
+/* reviews.css */
+.review-list{
+    margin-top: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review h2 {
+    font-size: 1em;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.review p {
+    margin: 10px 0;
+}
+
+small {
+    color: #666;
+}
+
+.star {
+    color: lightgray; /* Default star color */
+    font-size: 1.5em; /* Adjust size as needed */
+}
+
+.star.filled {
+    color: gold; /* Color for filled stars */
+}
+
+
+.review-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-actions button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-actions button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,41 @@
+/* Styles for hour slots */
+.hour-slots-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Single column for hours */
+    gap: 5px;
+}
+
+.hour-slot {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hour-slot:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+.hour-slot:last-child {
+    border-bottom: none; /* Remove border from the last hour slot */
+}
+
+/* Highlighted hour slot when clicked */
+.hour-slot--highlighted {
+    background-color: #007bff; /* Bootstrap-style blue */
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .hour-slot {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

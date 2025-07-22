@@ -1,0 +1,58 @@
+/* reviews.css */
+.review-list {
+    margin-bottom: 20px;
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review strong {
+    font-size: 1em;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.review p {
+    color: #666;
+    line-height: 1.4;
+}
+
+.review em {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.review span {
+    color: gold;
+    font-size: 1.2em; /* Adjust the size if needed */
+}
+
+.review small {
+    color: #888; /* Adjust the color as needed */
+    font-size: 0.9em; /* Adjust the size to make it smaller */
+}
+
+.review-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-actions button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.review-actions button:hover {
+    background-color: #0056b3;
+}

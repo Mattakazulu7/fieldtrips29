@@ -1,0 +1,17 @@
+# ignore these entire directories
+js/
+profile/
+php/
+
+# (optional) ignore any secrets file
+.env
+
+# common OS/editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# logs
+*.log
+

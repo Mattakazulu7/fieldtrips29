@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>goldgig</title>
+    <link rel='stylesheet' type='text/css' href='../bestcitycentre/styles/base.css'>
+    <link rel='stylesheet' type='text/css' href='../bestcitycentre/styles/buttons.css'>
+    <link rel='stylesheet' type='text/css' href='../bestcitycentre/styles/calendar.css'>
+    <link rel='stylesheet' type='text/css' href='../bestcitycentre/styles/components.css'>
+    <link rel='stylesheet' type='text/css' href='../bestcitycentre/styles/crown.css'>
+    <link rel='stylesheet' type='text/css' href='../bestcitycentre/styles/guruinfo.css'>
+    <link rel='stylesheet' type='text/css' href='../bestcitycentre/styles/highlights.css'>
+    <link rel='stylesheet' type='text/css' href='../bestcitycentre/styles/layout.css'>
+    <link rel='stylesheet' type='text/css' href='../bestcitycentre/styles/mediaqueries.css'>
+    <link rel='stylesheet' type='text/css' href='../bestcitycentre/styles/reset.css'>
+    <link rel='stylesheet' type='text/css' href='../bestcitycentre/styles/reviews.css'>
+    <link rel='stylesheet' type='text/css' href='../bestcitycentre/styles/seeavailability.css'>
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css'>
+</head>
+<body>
+    <crown>
+        <div class='logo'>
+            <a href='https://www.freetoursamsterdam.nl/temp'>Amsterdam</a>
+        </div>
+        <nav class='nav-menu'>
+            <a href='#' class='nav-link' id='signupBtn'>Sign Up</a>
+            <a href='#' class='nav-link' id='loginBtn'>Login</a>
+        </nav>
+        <div class='heading'></div>
+    </crown>
+
+    <header class='header-gallery'>
+        <img src='photos/tourImage1.jpg' alt='Tour Image 1'>
+        <img src='photos/tourImage2.jpg' alt='Tour Image 2'>
+        <img src='photos/tourImage3.jpg' alt='Tour Image 3'>
+        <img src='photos/tourImage4.jpg' alt='Tour Image 4'>
+        <img src='photos/tourImage5.jpg' alt='Tour Image 5'>
+        <img src='photos/tourImage6.jpg' alt='Tour Image 6'>
+        <img src='photos/tourImage7.jpg' alt='Tour Image 7'>
+        <img src='photos/tourImage8.jpg' alt='Tour Image 8'>
+    </header>
+
+    <main class='main-content'>
+        <button id='toggleCalendarButton' class='see-availability-button'>BOOK NOW</button>
+        <div id='calendarContainer' class='hidden'>
+            <div class='calendar'>
+                <h2>When do you want to go?</h2>
+                <div class='calendar-widget'>
+                    <div class='month'>
+                        <button id='prevMonth' class='month-nav'>&laquo;</button>
+                        <h3 id='monthYear'></h3>
+                        <button id='nextMonth' class='month-nav'>&raquo;</button>
+                    </div>
+                    <div class='days'>
+                        <div class='day-name'>Sun</div>
+                        <div class='day-name'>Mon</div>
+                        <div class='day-name'>Tue</div>
+                        <div class='day-name'>Wed</div>
+                        <div class='day-name'>Thu</div>
+                        <div class='day-name'>Fri</div>
+                        <div class='day-name'>Sat</div>
+                    </div>
+                    <div id='calendarDays' class='days'>
+                        <!-- Placeholder days for a given month -->
+                        <div class='day'>1</div>
+                        <div class='day'>2</div>
+                        <div class='day'>3</div>
+                        <div class='day'>4</div>
+                        <div class='day'>5</div>
+                        <div class='day'>6</div>
+                        <div class='day'>7</div>
+                        <div class='day'>8</div>
+                        <div class='day'>9</div>
+                        <div class='day'>10</div>
+                        <div class='day'>11</div>
+                        <div class='day'>12</div>
+                        <div class='day'>13</div>
+                        <div class='day'>14</div>
+                        <div class='day'>15</div>
+                        <div class='day'>16</div>
+                        <div class='day'>17</div>
+                        <div class='day'>18</div>
+                        <div class='day'>19</div>
+                        <div class='day'>20</div>
+                        <div class='day'>21</div>
+                        <div class='day'>22</div>
+                        <div class='day'>23</div>
+                        <div class='day'>24</div>
+                        <div class='day'>25</div>
+                        <div class='day'>26</div>
+                        <div class='day'>27</div>
+                        <div class='day'>28</div>
+                        <div class='day'>29</div>
+                        <div class='day'>30</div>
+                        <div class='day'>31</div>
+                    </div>
+                </div>
+
+                <div class='schedule-summary'>
+                    <h4>Upcoming Events</h4>
+                    <div class='schedule-detail' data-time='00:12' data-date=''>
+                        <div class='flag-icon'>🇳🇱</div>
+                        <div class='schedule-info'>
+                            <p>Morning Tour</p>
+                            <p>00:12</p>
+                            <pstyle="display: none;">Monday, Tuesday, Wednesday</p>
+                            <pstyle="display: none;">2024-11-07</p>
+                            <pstyle="display: none;">2024-11-23</p>
+                        </div>
+                        <div class='last-seat'>Last Seat Available!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="tour-info" data-name ="goldgig" data-user="5" >
+            <p><small><strong>Free tour</strong></small></p>
+            
+                 <p><small><strong> </strong></small></p>
+            
+            <h1><i class='fas fa-trophy' style='color: gold;'></i> goldgig</h1>
+            <div class='rating'>
+                <span>4.88 
+                    <i class='fas fa-medal' style='color: gold;'></i>  
+                    <i class='fas fa-medal' style='color: gold;'></i>  
+                    <i class='fas fa-medal' style='color: gold;'></i>  
+                    <i class='fas fa-medal' style='color: gold;'></i>  
+                    <i class='fas fa-medal' style='color: gold; clip-path: inset(0 12% 0 0);'></i> 
+                </span>
+                <span><small>Excellent</small></span>
+                <span>(5,569 ratings)</span>
+
+                <p><strong><i class='fas fa-map-marker-alt'></i> Location:</strong> Amsterdam 00:12</p>
+                <p><strong><i class='fas fa-clock'></i> Duration:</strong> 1h and 30min</p>
+                <p><strong><i class='fas fa-language'></i> Languages:</strong> German</p>
+            </div>
+
+            <div class='guru-info' id='guruInfo'>
+                <h3>Guide: a</h3>
+                <span class='pro-badge'>PRO Quality Verified</span>
+                <p>Registered on December 03, 2019</p>
+                <p>Amsterdam's Guides was established in 2016 with a focus on offering truly immersive, personalized walking tours of hidden gems, untold stories, and insider knowledge that you won't find in any guidebook. We're dedicated to making each tour unique, interactive, and tailored to the interests of our guests, ensuring a memorable and authentic Amsterdam experience.</p>
+                <button class='show-more'>Show more</button>
+            </div>
+
+            <div class='tour-description'>
+                <h2>Tour description wow</h2>
+                <div class='description-content' id='descriptionContent'>
+                    <p>Discover the fascinating story of Amsterdam with Amsterdam's expert guides. Together with your super-local guide, you will uncover hidden gems, stroll through charming canals, and learn about the city's rich history, from its Golden Age to modern-day wonders. Explore iconic landmarks like the Royal Palace and the Golden Bend on the Amstel River, while hearing captivating tales about Amsterdam's art, culture, and unique architecture. Whether it's the history of Dutch trade, history of prostitution, or the city's thriving creative scene, you'll experience the heart of Amsterdam like never before.</p>
+                    <p>We blend stunning sightseeing with engaging storytelling, offering a comprehensive tour that covers everything you need to know about Amsterdam. From its rich history and vibrant modern life to its culture, art, fun trivia, and personal insights, our tour provides a complete experience in one unforgettable journey.</p>
+                </div>
+                <button class='show-more-description'>Show more</button>
+            </div>
+
+            <div class="highlights">
+    <h2>Highlights</h2>
+    <p><strong>What will we visit on this tour?</strong></p>
+    <div class="itinerary">
+        <p>
+  <strong>Meeting point:</strong> 
+  <a href="https://www.google.com/maps/place/52%C2%B022'35.2%22N+4%C2%B054'08.5%22E/@52.376497,4.9023173,19.28z/data=!4m12!1m7!3m6!1s0x47c609b9faf3e9f3:0x6e28d995948f9bdb!2sCaf%C3%A9+the+Schreiertower!8m2!3d52.3764398!4d4.9023003!16s%2Fm%2F02qphy7!3m3!8m2!3d52.376454!4d4.902362?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D" style="color: purple; text-decoration: underline;" target="_blank">
+    Tower of tears: Prins Hendrikkade 95, 1012 AE Amsterdam
+  </a>
+</p>
+
+        <p>Meet at the entrance to the tower of Tears. Look for the guide(s) holding a small yellow umbrella at the front door of the Tower</p>
+        <div class="itinerary-list-wrapper">
+            <ol>
+                <li><strong>Outside visit:</strong> Tower of Tears</li>
+                <li><strong>Outside visit:</strong> De Waag</li>
+                <li><strong>Outside visit:</strong> Oude Kerk</li>
+                <li><strong>Outside visit:</strong> Red Light District</li>
+                <li><strong>Outside visit:</strong> Amstel River</li>
+                <li><strong>Outside visit:</strong> Train Station</li>
+                <li><strong>Outside visit:</strong> Stock Market</li>
+                <li><strong>Outside visit:</strong> UNESCO Heritage Canals</li>
+                <li><strong>Outside visit:</strong> 9 Streets</li>
+                <li><strong>Outside visit:</strong> Anne Frank House</li>
+                <li><strong>Outside visit:</strong> West Church</li>
+                <li><strong>Outside visit:</strong> Homo Monument</li>
+
+                <!-- Add more stops as needed -->
+            </ol>
+            <button class="show-more-steps">Show more steps</button>
+        </div>
+    </div>
+    <div class="map">
+        <iframe
+            width="100%"
+            height="400"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+           src="https://www.openstreetmap.org/export/embed.html?bbox=4.899361%2C52.374444%2C4.905361%2C52.378444&layer=mapnik&marker=52.376444%2C4.902361"
+
+>
+        </iframe>
+        <br/>
+        <small>
+            <a href="https://www.openstreetmap.org/?mlat=52.3752&mlon=4.8962#map=16/52.3752/4.8962">View Larger Map</a>
+        </small>
+    </div>
+</div>
+
+            
+            <div class="cost-section">
+                <h2>How much does this tour cost?</h2>
+                <p>Free tours do not have a set price, instead, each person gives the uide at the end of the tour the amount that he or she considers appropriate (these usually range from €10 to €50 depending on satisfaction with the tour).</p>
+            </div>
+
+            <div class="opinions-section">
+                <h2>Tour opinions</h2>
+                <div class="rating-summary">
+                    <div class="overall-rating">
+                        <span class="rating-number">4.88</span>
+                        <span class="rating-stars">★★★★★</span>
+                        <span class="rating-description">Excellent</span>
+                        <span class="rating-count">(5,569 ratings)</span>
+                    </div>
+                    <div class="ratings-by-category">
+                        <div class="category">
+                            <span>Professionalism</span>
+                            <div class="category-bar">
+                                <div class="category-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="category-rating">4.88</span>
+                        </div>
+                        <div class="category">
+                            <span>Fun</span>
+                            <div class="category-bar">
+                                <div class="category-fill" style="width: 95%;"></div>
+                            </div>
+                            <span class="category-rating">4.79</span>
+                        </div>
+                        <div class="category">
+                            <span>Expression</span>
+                            <div class="category-bar">
+                                <div class="category-fill" style="width: 96%;"></div>
+                            </div>
+                            <span class="category-rating">4.82</span>
+                        </div>
+                        <div class="category">
+                            <span>Quality</span>
+                            <div class="category-bar">
+                                <div class="category-fill" style="width: 98%;"></div>
+                            </div>
+                            <span class="category-rating">4.88</span>
+                        </div>
+                        <div class="category">
+                            <span>Route</span>
+                            <div class="category-bar">
+                                <div class="category-fill" style="width: 96%;"></div>
+                            </div>
+                            <span class="category-rating">4.80</span>
+                        </div>
+                    </div>
+                </div>
+                 <div id="reviews" class="review-list"></div>
+    <div class="review-actions">
+                    <button class="show-more-reviews" onclick="location.href='https://freetoursamsterdam.nl/temp/goldenage/reviews'">
+    Show 5,569 reviews
+</button>
+
+                    <button class="write-review" onclick="window.location.href='https://www.freetoursamsterdam.nl/temp/goldenage/writereview';">
+    Write my review
+</button>
+
+                </div>
+            </div>
+            
+        </div>
+
+      
+
+    </main>
+    </main>
+
+    <footer>
+        <div class='footer-info'>
+            <p>© 2024 Free Tours Amsterdam | <a href='/terms' target='_blank'>Terms and Conditions</a> | <a href='/privacy' target='_blank'>Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src='calendarbooking.js'></script>
+    <script src='../bestcitycentre/toggleguruinfo.js'></script>
+    <script src='../bestcitycentre/toggletourdescription.js'></script> 
+    <script src='../bestcitycentre/togglesteps.js'></script> 
+    <script src='../bestcitycentre/seeavailability.js'></script>
+    <script src='../bestcitycentre/reviews.js'></script>
+</body>
+</html>
+{"status":"success","filePath":"guideportal\/gallery\/20241011_181418.jpg"}

@@ -1,0 +1,64 @@
+crown {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out logo and nav menu */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add some padding around the crown */
+    background-color: #f8f8f8; /* Example background color */
+    position: relative; /* Ensure positioning context for absolute elements */
+}
+
+crown .logo a {
+    text-decoration: none;
+    color: #ff5a5f; /* GuruWalk's primary color */
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif; /* Bubbly and modern font */
+    letter-spacing: 1px; /* Slightly more spacing for readability */
+}
+
+crown .logo a:hover {
+    text-shadow: 2px 2px 8px rgba(255, 90, 95, 0.4); /* Soft shadow for a glowing effect on hover */
+}
+
+crown .heading {
+    font-family: 'Nunito Sans', sans-serif; /* Same font as GuruWalk */
+    color: black; /* GuruWalk's primary color */
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 1px; /* Adjust as needed for spacing */
+    position: absolute;
+    top: 20px; /* Adjust if necessary */
+    left: 365px; /* Adjust if necessary */
+}
+
+crown .nav-menu {
+    display: flex;
+    gap: 10px; /* Add spacing between buttons */
+}
+
+crown .nav-menu a {
+    text-decoration: none;
+    color: #ff5a5f; /* Link color */
+    font-size: 10px;
+}
+
+crown .nav-menu a:hover {
+    color: #ff5a5f; /* Hover color */
+}
+
+crown .nav-link {
+    text-decoration: none;
+    color: white; /* White text color for better visibility */
+    border: 1px solid #ff5a5f; /* Border color set to #ff5a5f */
+    background-color: white; /* Primary color for buttons */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+crown .nav-link:hover {
+    background-color: #e14e50; /* Darker shade on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}

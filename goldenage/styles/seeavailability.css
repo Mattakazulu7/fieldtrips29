@@ -1,0 +1,52 @@
+/* Hide the calendar container initially */
+.hidden {
+    display: none;
+}
+
+
+.see-availability-button {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0 auto 20px auto;
+    margin-bottom: 10px;
+    width: 50%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.see-availability-button:hover {
+    background-color: #ff5a5f;
+}
+
+
+@media screen and (max-width: 768px) {
+  .see-availability-button {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0; /* Remove any margins */
+    border-radius: 0; /* Remove the border-radius for full width */
+    z-index: 1001; /* Ensure it's on top of other content */
+  }
+  /* Full-screen calendar wall */
+.calendar-wall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's on top of everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}

@@ -1,0 +1,143 @@
+/* maritime.css (modern redesign) */
+
+/* Fixed header at the top */
+.nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Offset main content so it isn't hidden behind the fixed header */
+.calendar-container {
+  margin-top: 80px;
+  padding: 1rem;
+  background-color: #f0f2f5;
+  min-height: calc(100vh - 80px);
+}
+
+/* Modern card style for calendar */
+#calendar {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border: none;
+  overflow: hidden;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Toolbar styling */
+.fc-toolbar {
+  padding: 1rem 1.5rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Title styling */
+.fc-toolbar-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333333;
+  margin: 0.5rem 0;
+}
+
+/* Button group styling */
+.fc .fc-button-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Buttons: pill shape, subtle shadows */
+.fc-button {
+  background-color: #ff5a5f;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, transform 0.15s;
+}
+.fc-button:hover {
+  background-color: #e14e50;
+  transform: translateY(-2px);
+}
+.fc-button:disabled {
+  background-color: #cccccc;
+  box-shadow: none;
+  cursor: default;
+}
+
+/* Grid headers */
+.fc-col-header-cell-cushion {
+  font-weight: 600;
+  color: #666666;
+  padding: 0.75rem 0;
+}
+
+/* Day cells */
+.fc-daygrid-day-top {
+  padding: 0.5rem;
+}
+
+.fc-daygrid-day-number {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+/* Today highlight */
+.fc-day-today {
+  background-color: #ffebeb;
+  border-top: 4px solid #ff5a5f;
+}
+
+/* Hover effect on cells */
+.fc-daygrid-day:hover {
+  background-color: rgba(255, 90, 95, 0.1);
+  cursor: pointer;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .calendar-container {
+    margin-top: 100px;
+    padding: 0.5rem;
+  }
+  .fc-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .fc-button-group {
+    justify-content: center;
+  }
+}
+
+/* Center and constrain width on larger screens */
+@media (min-width: 768px) {
+  .calendar-container {
+    max-width: 800px;
+    margin: 80px auto 0;
+  }
+}
+
+/* ——— Override disabled look on Today/Tomorrow pills ——— */
+.fc-today-button[disabled],
+.fc-tomorrow-button[disabled] {
+  opacity:           1 !important;
+  background-color:  #ff5a5f !important;
+  border:            none !important;
+  color:             #ffffff !important;
+  box-shadow:        0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  cursor:            pointer !important;
+  pointer-events:    auto !important;
+}

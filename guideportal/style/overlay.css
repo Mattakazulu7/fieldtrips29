@@ -1,0 +1,141 @@
+ /* overlay.css */
+
+.overlay {
+    position: fixed;
+    top: 266px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    z-index: 1000; /* Ensure it covers everything */
+}
+
+.overlay-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.overlay.show .overlay-content {
+    transform: translateY(0); /* Animate into view */
+    opacity: 1; /* Fully visible */
+}
+
+.scroll {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    max-height: 400px; /* Set a max height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+/* Form elements */
+form label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+form input[type="time"] {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+/* Input focus effect */
+form input[type="time"]:focus,
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+    border-color: #007bff; /* Highlight input when focused */
+    outline: none; /* Remove default outline */
+}
+.days-checkboxes {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            
+        }
+
+        .days-labels {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .days-checkboxes div,
+        .days-labels div {
+            flex: 1;
+            text-align: center;
+        }
+         input[type="checkbox"] {
+            transform: scale(1.9); /* Increases size by 1.5 times */
+            margin: 0 5px; /* Adds margin to prevent overlap with neighboring checkboxes */
+         }
+
+/* Buttons */
+button {
+    background-color: #007bff; /* Primary blue button */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%; /* Full-width button for modern look */
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darken button on hover */
+}
+
+button[type="button"] {
+    background-color: #6c757d; /* Secondary button (Cancel) */
+}
+
+button[type="button"]:hover {
+    background-color: #5a6268; /* Darker on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .overlay-content {
+        position: relative;
+        padding: 20px;
+        width: 100%; /* Adapt to smaller screens */
+    }
+.scroll {
+        position: relative;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        width: 100%; /* Make it 100% width on smaller screens */
+        max-height: 300px; /* Reduce max height for smaller screens */
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+    button {
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+}

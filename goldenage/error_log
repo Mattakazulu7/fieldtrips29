@@ -1,0 +1,91 @@
+[23-Aug-2024 18:33:46 UTC] PHP Warning:  Undefined array key 1 in /home/z0lcrpuxi6vk/public_html/temp/bestcitycentre/update_calendar.php on line 42
+[23-Aug-2024 18:34:19 UTC] PHP Warning:  Undefined array key 1 in /home/z0lcrpuxi6vk/public_html/temp/bestcitycentre/update_calendar.php on line 42
+[23-Aug-2024 18:36:54 UTC] PHP Warning:  Undefined array key 1 in /home/z0lcrpuxi6vk/public_html/temp/bestcitycentre/update_calendar.php on line 42
+[23-Aug-2024 18:41:41 UTC] PHP Warning:  Undefined array key 1 in /home/z0lcrpuxi6vk/public_html/temp/bestcitycentre/generate_calendar.php on line 44
+[23-Sep-2024 15:22:34 UTC] PHP Warning:  include(reviews.php): Failed to open stream: No such file or directory in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 271
+[23-Sep-2024 15:22:34 UTC] PHP Warning:  include(): Failed opening 'reviews.php' for inclusion (include_path='.:/opt/alt/php81/usr/share/pear:/opt/alt/php81/usr/share/php:/usr/share/pear:/usr/share/php') in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 271
+[23-Sep-2024 15:23:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'tours.review' doesn't exist in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php:18
+Stack trace:
+#0 /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php(18): mysqli->query()
+#1 /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php(271): include('/home/z0lcrpuxi...')
+#2 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php on line 18
+[23-Sep-2024 15:23:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'tours.review' doesn't exist in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php:18
+Stack trace:
+#0 /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php(18): mysqli->query()
+#1 /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php(271): include('/home/z0lcrpuxi...')
+#2 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php on line 18
+[23-Sep-2024 15:53:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'staracademy7975@gmail.com'@'localhost' (using password: YES) in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php:14
+Stack trace:
+#0 /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php(14): mysqli->__construct()
+#1 /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php(3): include('/home/z0lcrpuxi...')
+#2 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php on line 14
+[23-Sep-2024 15:54:11 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reviewer_name' in 'field list' in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php:25
+Stack trace:
+#0 /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php(25): mysqli->query()
+#1 /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php(3): include('/home/z0lcrpuxi...')
+#2 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php on line 25
+[23-Sep-2024 15:54:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'reviewer_name' in 'field list' in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php:25
+Stack trace:
+#0 /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php(25): mysqli->query()
+#1 /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php(3): include('/home/z0lcrpuxi...')
+#2 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php on line 25
+[23-Sep-2024 15:55:30 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'review_date' in 'field list' in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php:25
+Stack trace:
+#0 /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php(25): mysqli->query()
+#1 /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php(3): include('/home/z0lcrpuxi...')
+#2 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php on line 25
+[23-Sep-2024 15:56:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'staracademy7975@gmail.com'@'localhost' (using password: YES) in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php:11
+Stack trace:
+#0 /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php(11): mysqli->__construct()
+#1 /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php(3): include('/home/z0lcrpuxi...')
+#2 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/fetch_reviews.php on line 11
+[23-Sep-2024 16:22:46 UTC] PHP Warning:  Undefined variable $result in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 320
+[23-Sep-2024 16:22:46 UTC] PHP Warning:  Attempt to read property "num_rows" on null in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 320
+[23-Sep-2024 16:22:46 UTC] PHP Warning:  Undefined variable $conn in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 334
+[23-Sep-2024 16:22:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php:334
+Stack trace:
+#0 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 334
+[23-Sep-2024 16:23:33 UTC] PHP Warning:  Undefined variable $result in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 320
+[23-Sep-2024 16:23:33 UTC] PHP Warning:  Attempt to read property "num_rows" on null in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 320
+[23-Sep-2024 16:23:33 UTC] PHP Warning:  Undefined variable $conn in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 334
+[23-Sep-2024 16:23:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php:334
+Stack trace:
+#0 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 334
+[23-Sep-2024 16:23:40 UTC] PHP Warning:  Undefined variable $result in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 320
+[23-Sep-2024 16:23:40 UTC] PHP Warning:  Attempt to read property "num_rows" on null in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 320
+[23-Sep-2024 16:23:40 UTC] PHP Warning:  Undefined variable $conn in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 334
+[23-Sep-2024 16:23:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php:334
+Stack trace:
+#0 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 334
+[23-Sep-2024 16:24:13 UTC] PHP Warning:  Undefined variable $result in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 291
+[23-Sep-2024 16:24:13 UTC] PHP Warning:  Attempt to read property "num_rows" on null in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 291
+[23-Sep-2024 16:24:13 UTC] PHP Warning:  Undefined variable $conn in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 305
+[23-Sep-2024 16:24:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function close() on null in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php:305
+Stack trace:
+#0 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 305
+[23-Sep-2024 16:26:43 UTC] PHP Fatal error:  Uncaught Error: mysqli object is already closed in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php:311
+Stack trace:
+#0 /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php(311): mysqli->close()
+#1 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 311
+[23-Sep-2024 16:27:11 UTC] PHP Fatal error:  Uncaught Error: mysqli object is already closed in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php:340
+Stack trace:
+#0 /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php(340): mysqli->close()
+#1 {main}
+  thrown in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 340
+[23-Sep-2024 16:27:49 UTC] PHP Warning:  foreach() argument must be of type array|object, int given in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 327
+[23-Sep-2024 16:27:57 UTC] PHP Warning:  foreach() argument must be of type array|object, int given in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 327
+[23-Sep-2024 16:28:10 UTC] PHP Warning:  foreach() argument must be of type array|object, int given in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 327
+[23-Sep-2024 16:28:36 UTC] PHP Warning:  foreach() argument must be of type array|object, int given in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 329
+[23-Sep-2024 16:30:46 UTC] PHP Warning:  foreach() argument must be of type array|object, int given in /home/z0lcrpuxi6vk/public_html/temp/goldenage/index.php on line 334

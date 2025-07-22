@@ -1,0 +1,18 @@
+/* media-queries.css */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .tour-info {
+        width: 100%;
+    }
+
+    .ratings-by-category {
+        width: 100%;
+    }
+
+    .category-bar {
+        width: 60%;
+    }
+}

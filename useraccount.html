@@ -1,0 +1,60 @@
+<?php
+session_start();
+
+// Redirect to login if not logged in
+if (!isset($_SESSION['userId'])) {
+  header("Location: login.php");
+  exit();
+}
+
+// Set profile picture path from session or default
+$profilePic = !empty($_SESSION['profilePicture']) ? $_SESSION['profilePicture'] : 'uploads/profile_pictures/default.jpg';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Account</title>
+
+  <link rel="stylesheet" href="useraccount.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body class="account-page">
+  <header>
+    <nav class="acc-nav-menu">
+      <a href="index.php" class="nav-link"><i class="fas fa-home"></i> Home</a>
+      <a href="logout.php" class="nav-link" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </nav>
+    <div class="logo">
+      <a href="#">Fieldtrips.co.za</a>
+    </div>
+    <h1 class="page-title">My Account</h1>
+  </header>
+
+  <main class="account-container" style="padding: 20px;">
+    <section class="user-info">
+      <h2>Profile Details</h2>
+
+      <!-- Profile Picture Preview -->
+      <img id="profilePicturePreview" src="<?php echo htmlspecialchars($profilePic); ?>" alt="Profile Picture"
+           style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+
+      <p><strong>User ID:</strong> <span id="userId"><?php echo htmlspecialchars($_SESSION['userId']); ?></span></p>
+      <p><strong>Name:</strong> <span id="userName"><?php echo htmlspecialchars($_SESSION['userName']); ?></span></p>
+      <p><strong>Email:</strong> <span id="userEmail"><?php echo htmlspecialchars($_SESSION['userEmail']); ?></span></p>
+      <p><strong>Member Since:</strong> <span id="userSince"><?php echo htmlspecialchars($_SESSION['memberSince']); ?></span></p>
+    </section>
+
+    <section class="user-actions" style="margin-top: 30px;">
+      <h3>Account Actions</h3>
+      <button onclick="editProfile()">Edit Profile Picture</button>
+      <button onclick="deleteAccount()">Delete Account</button>
+    </section>
+  </main>
+
+  <script src="js/editProfilePicture.js"></script>
+  <script src="js/useraccount.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+/* Calendar Container */
+.calendar {
+    width: 100%;
+    max-width: 350px;
+    margin: 2px auto;
+    padding: 2px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure the content stays within the container */
+}
+
+/* Calendar Heading */
+.calendar h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Calendar Widget */
+.calendar-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Month Navigation */
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+.month-nav {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 1px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.month-nav:hover {
+    background-color: #0056b3;
+}
+
+#monthYear {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Days Grid */
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Seven columns for the days of the week */
+    gap: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.day-name {
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+#calendarDays .day {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 0.6em;
+}
+
+#calendarDays .day:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#calendarDays .day.active {
+    background-color: #007BFF !important; /* Make sure the active day has a blue background */
+    color: white !important; /* Ensure the text is white */
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.day-available {
+    background-color: #28a745 !important; /* Green background */
+    color: white; /* Text color for readability */
+    font-weight: bold; /* Optional: bold for emphasis */
+}
+.day.past {
+    background-color: grey; /* Grey out past days */
+    color: white;           /* Optional: change text color */
+    pointer-events: none;   /* Disable clicking on past days */
+}
+
+.day.active {
+    background-color: lightblue;  /* Highlight current day */
+    color: black;
+}
+
+/* Schedule Summary */
+.schedule-summary {
+    background-color: #fff;
+    padding: 1px;
+    border-radius: 8px 8px 10px 10px; /* Match calendar container radius */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Shadow to give depth */
+    margin-top: 5px; /* No gap between calendar and schedule */
+    width: 100%;
+    text-align: center;
+    
+}
+
+.schedule-summary h4 {
+    font-size: 1.3em;
+    margin-bottom: 1px;
+    color: #333;
+}
+
+.schedule-summary p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Schedule Detail Styling */
+.schedule-detail {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #00A8E8, #007BB5); /* GuruWalk-inspired blue gradient */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 1px;
+    flex-wrap: nowrap; /* Ensure everything stays on one line */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.schedule-detail .flag-icon {
+    font-size: 1em; /* Adjusted to a standard size */
+    margin-right: 10px;
+    flex-shrink: 0; /* Prevents the icon from shrinking */
+}
+
+.schedule-detail .schedule-info {
+    flex-grow: 1;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide any overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+.schedule-detail .schedule-info p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    colour: black;
+}
+
+.schedule-detail .last-seat {
+    background-color: #00bfa5; /* Use the existing site color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    flex-shrink: 0; /* Prevent the last seat indicator from shrinking */
+    white-space: nowrap; /* Prevent wrapping */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Add subtle shadow for depth */
+}
+
+.schedule-detail.disabled {
+    opacity: 0.5;
+    pointer-events: none; /* Prevent clicking on disabled elements */
+    cursor: not-allowed;  /* Change cursor to indicate it's disabled */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  
+    .schedule-detail {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .schedule-detail .flag-icon {
+        margin-bottom: 5px;
+    }
+
+    .schedule-detail .last-seat {
+        margin-top: 10px;
+    }
+    .schedule-detail.disabled {
+    opacity: 0;
+    pointer-events: none; /* Prevent clicking on disabled elements */
+    cursor: not-allowed;  /* Change cursor to indicate it's disabled */
+}
+}

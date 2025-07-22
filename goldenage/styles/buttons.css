@@ -1,0 +1,68 @@
+/* buttons.css */
+.show-more {
+    padding: 8px 12px;
+    background: transparent;
+    color: black;
+    border: 2px black; /* Add a white border to maintain visibility */
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.show-more:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight lightening on hover */
+    color: white; /* Keep the text color white */
+}
+
+.show-more-description {
+    padding: 8px 12px;
+    background: transparent;
+    color: black;
+    border: 2px black; /* Add a white border to maintain visibility */
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.show-more-description:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight lightening on hover */
+    color: white; /* Keep the text color white */
+}
+.show-more-steps {
+    padding: 8px 12px;
+    background: transparent;
+    color: black;
+    border: 2px black; /* Add a white border to maintain visibility */
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.show-more-steps:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight lightening on hover */
+    color: white; /* Keep the text color white */
+}
+
+.review-actions button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: 2px black; /* Add a white border to maintain visibility */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.review-actions button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight lightening on hover */
+    color: white; /* Keep the text color white */
+}

@@ -1,0 +1,74 @@
+/* layout.css */
+
+
+.header-gallery {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping to keep all images in a single row */
+    gap: 16px; /* Space between images */
+    overflow-x: auto; /* Allows horizontal scrolling if the row exceeds the viewport width */
+    padding: 8px; /* Optional: Adds some padding around the container */
+}
+
+.header-gallery img {
+    flex: 0 0 auto; /* Ensures the images maintain their size and don't shrink */
+    width: 300px; /* Set a fixed width for the images, adjust as needed */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+    border-radius: 8px; /* Optional: Adds rounded corners to the images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+
+/* Header Styles */
+home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+.main-content {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    justify-content: flex-start; /* Align items to the start of the column */
+    padding: 20px;
+    background: white;
+}
+
+
+@media (max-width: 768px) {
+    .main-content {
+        display: block; /* Ensure main content is a block-level container */
+        width: 100%; /* Ensure it takes full width */
+    }
+
+    .calendar,
+    .tour-info {
+        width: 100%; /* Force each section to take up the full width */
+        max-width: 100%; /* Prevent any constraining max-width */
+        margin: 0; /* Remove any margin that might cause side-by-side layout */
+        padding: 20px; /* Maintain internal spacing */
+        box-sizing: border-box; /* Include padding and borders in the width */
+        clear: both; /* Ensure the element starts on a new line */
+        position: relative;
+    }
+
+    .calendar {
+        margin-bottom: 2px; /* Add spacing between calendar and tour info */
+    }
+
+    .month-nav,
+    .day-name,
+    .day {
+        flex: none; /* Ensure no flex behavior causes squishing */
+        width: auto; /* Ensure internal elements don't stretch inappropriately */
+    }
+}

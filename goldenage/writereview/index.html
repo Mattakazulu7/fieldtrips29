@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submit Your Tour Review</h1>
+        <form id="reviewForm" action="submitreview.php" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating" required>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Fair</option>
+                <option value="1">1 - Poor</option>
+            </select>
+
+            <label for="review_text">Review</label>
+            <textarea id="review_text" name="review_text" rows="4" placeholder="Write your review" required></textarea>
+
+            <label for="travel_type">Type of Travel</label>
+            <select id="travel_type" name="travel_type" required>
+                <option value="in group">In Group</option>
+                <option value="alone">Alone</option>
+                <option value="family">With Family</option>
+                <option value="friends">With Friends</option>
+            </select>
+
+            <label for="travel_date">Date of Travel</label>
+            <input type="date" id="travel_date" name="travel_date" required>
+
+            <label for="guide_name">Guide Name</label>
+            <input type="text" id="guide_name" name="guide_name" placeholder="Enter guide's name" required>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

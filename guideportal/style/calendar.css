@@ -1,0 +1,274 @@
+/* Toggle Button Styles */
+.toggle-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px; /* Adds space between the button and calendar */
+    font-size: 16px;
+    background-color: #007bff; /* Bootstrap-style blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3; /* Darken on hover */
+    transform: scale(1.05); /* Add slight scale for more interactivity */
+}
+
+/* Calendar Container */
+#calendarContent {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    position: relative;  /* Ensure proper stacking context */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 300px; /* Set the maximum height for the container */
+    overflow-y: auto;  /* Enable vertical scrolling when content exceeds max-height */
+}
+
+
+/* Calendar Header */
+.calendar-header {
+    display: flex;
+    justify-content: space-between; /* Distribute space between buttons and month-year */
+    align-items: center; /* Align the buttons and text vertically in the center */
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Month-Year styling */
+.month-year {
+    flex-grow: 1; /* This makes the month-year text take up available space */
+    text-align: center; /* Center the month-year text between the buttons */
+}
+
+/* Styling for Previous and Next buttons */
+.prev-month, .next-month {
+    background-color: #007bff; /* Bootstrap-style blue */
+    color: white;
+    border: none;
+    width: 30px; 
+    font-size: 6px;
+    padding: 2px 2px; /* Smaller padding for smaller buttons */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prev-month:hover, .next-month:hover {
+    background-color: #0056b3; /* Darken the button color on hover */
+}
+
+/* Week Range Styling */
+.week-range {
+    flex-grow: 1; /* Ensure the week range text takes up the available space */
+    text-align: center; /* Center the week range text */
+}
+
+/* Styling for Previous and Next Week Buttons */
+.prev-week, .next-week {
+    background-color: #007bff; /* Bootstrap-style blue */
+    color: white;
+    border: none;
+    width: 30px; 
+    font-size: 6px;
+    padding: 2px 2px; /* Smaller padding for smaller buttons */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prev-week:hover, .next-week:hover {
+    background-color: #0056b3; /* Darken the button color on hover */
+}
+
+/* Grid for month and week views */
+.calendar-grid, .week-view-grid {
+    display: grid;
+    gap: 10px;
+}
+
+/* Ensures the grid has exactly 7 columns for the days of the week */
+.calendar-grid {
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
+}
+
+.week-view-grid {
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days in week view */
+}
+
+/* Day Names (Weekdays) */
+.calendar-day-name, .week-day-name {
+    padding: 10px;
+    background-color: #e0e0e0;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #444;
+    text-align: center; /* Ensure day names are centered */
+}
+
+/* Calendar day, empty days, and hover effects */
+.calendar-day, .empty-day {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.calendar-day:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05); /* Slight scale on hover for interactivity */
+}
+
+.empty-day {
+    background-color: transparent; /* Empty day slots are transparent */
+    box-shadow: none;
+}
+
+/* Current day highlighted */
+.calendar-day--today {
+    background-color: #ffeb3b; /* Yellow highlight for today */
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Current day highlighted in orange when not selected */
+.today-warning {
+    background-color: orange;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+ border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden; /* Keeps the hours inside the column */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hour slots in week view */
+.hour-slot {
+    padding: 5px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.hour-slot:hover {
+    background-color: #ddd;
+}
+
+.hour-slot:last-child {
+    border-bottom: none; /* Remove border from the last hour slot */
+}
+
+.week-day-column--selected {
+    background-color: #007bff; /* Blue background for selected day */
+    color: white; /* White text for better contrast */
+}
+
+.week-day-column--selected .week-day-name {
+    background-color: #007bff; /* Ensure the day name area also gets the blue background */
+    color: white; /* White text for the day name as well */
+}
+
+/* Keep the default style for non-selected days */
+.week-day-name {
+    padding: 10px;
+    background-color: #e0e0e0; /* Default grey background for day name */
+    font-weight: bold;
+    border-radius: 5px;
+    color: #444;
+    text-align: center;
+}
+
+/* Highlight for today if not selected */
+.calendar-day--today {
+    background-color: #ff9800; /* Orange highlight for current day */
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Highlight for selected day */
+.calendar-day--selected {
+    background-color: #007bff; /* Blue background for selected day */
+    color: white; /* White text for contrast */
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #calendarContent {
+        padding: 10px;
+    }
+
+    .calendar-grid, .week-view-grid {
+        gap: 5px;
+    }
+
+    .calendar-day, .week-day-column {
+        padding: 5px;
+    }
+
+    .toggle-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Force 7 columns on smaller screens and ensure each cell fits */
+@media (max-width: 480px) {
+    #calendarContent {
+        padding: 5px;
+    }
+
+    /* Maintain 7 columns for small screens, using minmax to ensure each cell remains visible */
+    .calendar-grid, .week-view-grid {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(40px, 1fr)); /* 7 columns for small screens, with a min width of 40px per column */
+        gap: 5px;
+    }
+
+    .calendar-day, .week-day-column {
+        font-size: 10px; /* Slightly smaller font for mobile */
+        padding: 3px;
+        text-align: center; /* Ensure days are centered */
+    }
+
+    .calendar-header {
+        font-size: 16px;
+        margin-bottom: 10px; /* Adjust margin for header */
+    }
+
+    .toggle-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    /* Ensure day names in the week view are legible */
+    .week-day-name, .calendar-day-name {
+        font-size: 10px;
+        padding: 5px;
+        background-color: #e0e0e0;
+        border-radius: 3px;
+    }
+}
+        font-size: 10px;
+        padding: 5px;
+        background-color: #e0e0e0;
+        border-radius: 3px;
+    }
+}

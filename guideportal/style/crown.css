@@ -1,0 +1,13 @@
+.crown {
+    background-color: #e0f7fa;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.2em;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+}
+
+.account-total {
+    margin-right: 20px;
+    font-weight: bold;
+}

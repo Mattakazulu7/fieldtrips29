@@ -1,0 +1,338 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+/* Global Styles */
+body {
+       display: flex;
+   flex-direction: column-reverse; /* This makes the container appear before the crown in DOM stacking order */
+
+    font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+/* Crown Styles */
+crown {
+   position: fixed; /* Fixed positioning */
+    top: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    overflow: auto; /* Enable scrolling if content overflows */
+    z-index: 1; /* Ensure it's on top of other content */
+   pointer-events: none; /* Pass mouse events through the crown */ 
+}
+
+crown .interactive-element {
+   pointer-events: auto; /* Make only the interactive elements clickable */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif; /* Bubbly and modern font */
+    color: #ff5a5f; /* GuruWalk's primary color */
+    letter-spacing: 1px; /* Slightly more spacing for readability */
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+
+.logo a:hover {
+    text-shadow: 2px 2px 8px rgba(255, 90, 95, 0.4); /* Soft shadow for a glowing effect on hover */
+}
+
+.heading {
+    font-family: 'Nunito Sans', sans-serif; /* Same font as GuruWalk */
+    color: black; /* GuruWalk's primary color */
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 1px; /* Adjust as needed for spacing */
+    position: absolute;
+    top: 20px;
+    left: 365px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ff5a5f;
+    font-size: 10px;
+}
+
+.nav-menu a:hover {
+    color: #ff5a5f;
+}
+
+/* Styles for navigation links (Sign Up and Login buttons) */
+.nav-link {
+    text-decoration: none;
+    color: white; /* White text color for better visibility */
+    border: 1px solid #ff5a5f; /* Border color set to #ff5a5f */
+    background-color: white; /* Primary color for buttons */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    position: relative;
+    left: 1350px;
+}
+
+
+.nav-link:hover {
+    background-color: #e14e50; /* Darker shade on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Add spacing between buttons */
+.nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #ececec;
+    padding: 10px 0;
+    text-align: center;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    
+    top: 100px;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    padding: 10px;
+}
+
+.carousel-item {
+    min-width: 100px; /* Ensures the items have enough width to require scrolling */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    flex: 0 0 auto; /* Prevents items from shrinking */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adds space between the icon and text */
+}
+
+.carousel-item i {
+    font-size: 1.5rem; /* Adjust icon size */
+    color: #555; /* Icon color */
+}
+
+.carousel-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+    position: relative;
+    top:0px;
+    z-index: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+    
+}
+
+
+a .product, a .paidproduct {
+    position: relative;
+    width: 100%;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+a .product img, a .paidproduct img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+a .product .details, a .paidproduct .details {
+    padding: 20px;
+    text-align: left;
+}
+
+a .product .details h2, a .paidproduct .details h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+a .product .details p, a .paidproduct .details p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+a .product .details .time, a .paidproduct .details .time {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff5a5f;
+    margin: 10px 0;
+}
+
+a .product:hover, a .paidproduct:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+a .product .profile-picture {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px; /* Size of the circular profile picture */
+    height: 50px; /* Size of the circular profile picture */
+    border-radius: 50%; /* Circular shape */
+    overflow: hidden; /* Hide overflow */
+    border: 2px solid white; /* Border around the circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow */
+    z-index: 2; /* Ensure it is on top */
+}
+
+a .product .profile-picture img {
+    width: 100%; /* Fill the container */
+    height: 100%; /* Fill the container */
+    object-fit: cover; /* Cover the container */
+    position: relative; /* Ensure correct positioning */
+    
+    z-index: 2; /* Ensure it is on top */
+}
+
+.free-tours-button {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff5a5f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.free-tours-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.free-tours-button:hover {
+    background-color: #e14e50;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for laptop screens */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .logo a {
+        font-size: 38px; /* Slightly smaller font for better proportions on laptops */
+        left: 80px; /* Adjusted positioning for smaller screens */
+        top: 10px; /* Keep the top position consistent */
+    }
+
+    .heading {
+        font-size: 14px; /* Slightly smaller font size for better readability */
+        top: 50px; /* Adjusted position to align with the resized logo */
+        left: 300px; /* Adjust the left position for better alignment */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+
+    .logo a {
+        font-size: 38px;
+        position: relative;
+        left: 10px;
+        top: 0;
+        margin-bottom: 10px;
+    }
+
+    .heading {
+        font-size: 16px;
+        position: relative;
+        left: 2px;
+        top: 0;
+        margin-bottom: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;   /* ✅ keep horizontal layout */
+        gap: 10px;
+        flex-wrap: wrap;       /* ✅ wrap if too many links */
+        justify-content: flex-start;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .nav-menu > div {
+    display: flex;
+    align-items: center;
+}
+
+
+    .nav-link {
+        padding: 6px 12px;
+        font-size: 12px;
+        font-weight: bold;
+        position: relative;
+        transition: left 0.3s ease;
+        left: 200px; /* initial offset — will be overridden by JS */
+    }
+}

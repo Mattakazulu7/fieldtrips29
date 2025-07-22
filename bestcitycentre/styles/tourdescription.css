@@ -1,0 +1,26 @@
+.tour-description {
+    margin-top: 20px;
+    position: relative;
+}
+
+.tour-description h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description-content {
+    max-height: 100px; /* Initial visible height */
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, white 100%);
+    transition: max-height 0.5s ease;
+    color: #333; /* Dark text color */
+}
+
+.description-content.expanded {
+    max-height: 1000px; /* Expanded height */
+    background: none; /* Remove the gradient background when expanded */
+}
+
+

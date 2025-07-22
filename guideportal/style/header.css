@@ -1,0 +1,57 @@
+/*header.css*/
+/* Header Styles */
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Space between header and calendar */
+    
+    display: block;      /* Ensure the header is a block element */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+}
+
+/* Ensure no overlap with floats or other layout elements */
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.hero-section {
+    margin-bottom: 20px;
+}
+
+.hero-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.carousel-item {
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+    transform: scale(1.1);
+}

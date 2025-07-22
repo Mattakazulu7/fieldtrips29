@@ -1,0 +1,160 @@
+/* components.css */
+.tour-info {
+    
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ddd; /* Border for the tile */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 0 auto 20px auto; /* Center align with auto left and right margins */
+   
+    margin-bottom: 20px; /* Spacing at the bottom */
+    position: relative;
+}
+.tour-info p small{
+   color: #ff5a5f;
+   
+}
+.tour-info .rating span small{
+    color: #000; /* Ensure black color */
+    font-weight: 700; /* Use numeric value for boldness */
+    font-family: Arial, sans-serif; /* Specify a common font family for consistency */
+    text-transform: none; /* Ensure no unwanted text transformation */
+    font-size: 19px; /* Set text size to 24 pixels */
+}
+
+.tour-info .rating span:first-child {
+    background-color: #00bfa5; /* Green background for rating number */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+.cost-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text color */
+}
+
+.cost-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.cost-section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.opinions-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text color */
+}
+
+.opinions-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.rating-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.overall-rating {
+    text-align: center;
+}
+
+.overall-rating .rating-number {
+    font-size: 2.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.overall-rating .rating-stars {
+    font-size: 1.2em;
+    color: #FFD700; /* Gold color for stars */
+}
+
+.overall-rating .rating-description {
+    font-size: 1.2em;
+    color: #333;
+    display: block;
+    margin-top: 5px;
+}
+
+.overall-rating .rating-count {
+    font-size: 0.9em;
+    color: #666;
+    display: block;
+    margin-top: 5px;
+}
+
+.ratings-by-category {
+    width: 60%;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.category-bar {
+    width: 70%;
+    height: 8px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.category-fill {
+    height: 100%;
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+.category-rating {
+    width: 10%;
+    text-align: right;
+    color: #333;
+}
+/* Specific styles for phone screens */
+@media screen and (max-width: 768px) {
+    .tour-info {
+        width: 100%; /* Full width on phones */
+        padding: 15px; /* Adjust padding if needed for smaller screens */
+        border: 1px solid #ddd; /* Border for the tile */
+        border-radius: 10px; /* Rounded corners */
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow for smaller screens */
+        margin-bottom: 15px; /* Adjust spacing at the bottom */
+        position: relative;
+    }
+}
+

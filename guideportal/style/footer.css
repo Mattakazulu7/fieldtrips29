@@ -1,0 +1,35 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+
+.footer-tile {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.footer-item {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.footer-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-item span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.footer-item:hover {
+    background-color: #444;
+}
